@@ -25,15 +25,21 @@ header h2 {
     color: white;
 }
 .row-content {
-    margin: 10px;
     padding: 50px 0;
+    min-height: 200px;
+    border-bottom: 1px ridge;
     min-height: 200px;
 }
 
-.navbar {
+.navbar-dark {
     background-color: #901cad;
 }
 
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
 .review-panel {
     position: relative;
     display: block;
