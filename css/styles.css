@@ -40,11 +40,14 @@ a, a:hover {
     text-decoration: none;
 }
 
-.tab-content {
-    border: 1px solid #DDD;
-    border-top: none;
-    padding: 10px;
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+.carousel {
+    border: solid #5637DD;
+}
+
 .review-panel {
     position: relative;
     display: block;
