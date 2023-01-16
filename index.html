@@ -87,7 +87,8 @@
                       <!-- Your code additions will go above here. -->
                         </div>
                         <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                        <button type="submit" onclick="order()" class="btn btn-primary btn-sm ml-1">Search</button>
+                        <button type="button" onclick="order()" class="btn btn-primary btn-sm ml-1"
+                        data-dismiss="modal">Search</button>
                     </form>
                 </div>
             </div>
@@ -305,16 +306,18 @@
     $('#myInput').trigger('focus')
 })
 
+
+
 function order() {
   const message = document.querySelector("#message");
-  console.log(message.textContent)
-//   const checkedInput = document.querySelector("input:checked");
-//   if (checkedInput) {
-//     message.textContent = `You have placed an order for ${checkedInput.value}.`;
-//   } else {
-//     message.textContent = "Unknown order.";
-//   }
-    message.textContent = "Keri is the best!";
+  const checkedInput = document.querySelector("input:checked");
+  const numCampers = document.getElementById("numCampers");
+  const date = document.getElementById("date");
+  if (checkedInput) {
+    message.textContent = `You have placed a ${checkedInput.value} order for ${numCampers.value} campers on ${date.value}.`;
+  } else {
+    message.textContent = "Unknown order.";
+  }
 }
 </script>
 
