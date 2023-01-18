@@ -4,12 +4,12 @@ $("#myModal").on("shown.bs.modal", function () {
 
 function order() {
   const message = document.querySelector("#message");
-  console.log(message.textContent);
-  //   const checkedInput = document.querySelector("input:checked");
-  //   if (checkedInput) {
-  //     message.textContent = `You have placed an order for ${checkedInput.value}.`;
-  //   } else {
-  //     message.textContent = "Unknown order.";
-  //   }
-  message.textContent = "Keri is the best!";
+  const checkedInput = document.querySelector("input:checked");
+  const numCampers = document.getElementById("numCampers");
+  const date = document.getElementById("date");
+  if (checkedInput) {
+    message.textContent = `You have placed an order for a campsite.  A ${checkedInput.value} with ${numCampers.value} campers for the date ${date.value}.`;
+  } else {
+    message.textContent = "Unknown order.";
+  }
 }
