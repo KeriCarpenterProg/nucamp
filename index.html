@@ -314,7 +314,7 @@ function order() {
   const numCampers = document.getElementById("numCampers");
   const date = document.getElementById("date");
   if (checkedInput) {
-    message.textContent = `You have placed a ${checkedInput.value} order for ${numCampers.value} campers on ${date.value}.`;
+    message.textContent = `You have placed an order for a campsite.  A ${checkedInput.value} with ${numCampers.value} campers for the date ${date.value}.`;
   } else {
     message.textContent = "Unknown order.";
   }
