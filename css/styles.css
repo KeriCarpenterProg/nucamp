@@ -1,92 +1,77 @@
 body {
-    font-family: "Open Sans", sans-serif;
-}
-h1,h2,h3 {
-    font-family: "lobster", cursive;
-}
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Lobster", cursive; }
 
 h2 {
-    color:#3046c5;
-}
+  color: #3046C5; }
 
 header h2 {
-    color: #CEC8ff;
-}
+  color: #CEC8FF; }
 
 .site-footer {
-    background-image: linear-gradient(#CEC8ff, white);
-    padding: 20px 0px;
-}
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0px; }
 
 .jumbotron {
-    margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
-    color: white;
-}
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
+  color: white; }
+
 .row-content {
-    padding: 50px 0;
-    min-height: 200px;
-    border-bottom: 1px ridge;
-    min-height: 200px;
-}
+  padding: 50px 0;
+  min-height: 200px;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
 
 .navbar-dark {
-    background-color: #901cad;
-}
+  background-color: #901CAD; }
 
 a, a:hover {
-    color: inherit;
-    text-decoration: none;
-}
+  color: inherit;
+  text-decoration: none; }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-}
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel {
-    border: solid #5637DD;
-}
+  border: solid #5637dd; }
 
 .review-panel {
-    position: relative;
-    display: block;
-    color: white;
-    text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
-}
+  position: relative;
+  display: block;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
 
 .review-panel-rating {
-    font-size: 25px;
-    z-index: 1;
-    position: absolute;
-    font-weight: 600;
-    right: 15px;
-    bottom: 15px;
-}
+  font-size: 25px;
+  z-index: 1;
+  position: absolute;
+  font-weight: 600;
+  right: 15px;
+  bottom: 15px; }
 
 .review-panel-caption {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding: 5px 15px;
-    z-index: 1;
-    box-sizing: border-box;
-}
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 5px 15px;
+  z-index: 1;
+  box-sizing: border-box; }
 
 .review-panel-title {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0;
-    width: 80%;
-}
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  width: 80%; }
 
 .review-panel-genres {
-    display: block;
-    font-size: 17px;
-}
+  display: block;
+  font-size: 17px; }
 
 .overflow-wrap {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
