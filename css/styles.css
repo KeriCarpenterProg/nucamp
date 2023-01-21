@@ -75,3 +75,11 @@ a, a:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+#reserveModal .modal-header {
+  color: white;
+  background-color: #17A2B8; }
+
+#loginModal .modal-header {
+  color: white;
+  background-color: #901CAD; }

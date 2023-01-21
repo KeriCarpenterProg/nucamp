@@ -1,7 +1,3 @@
-$("#myModal").on("shown.bs.modal", function () {
-  $("#myInput").trigger("focus");
-});
-
 function order() {
   const message = document.querySelector("#message");
   const checkedInput = document.querySelector("input:checked");
@@ -13,3 +9,11 @@ function order() {
     message.textContent = "Unknown order.";
   }
 }
+
+$("#reserveButton").click(function () {
+  $("#reserveModal").modal();
+});
+
+$("#loginButton").click(function () {
+  $("#loginModal").modal();
+});

@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
                     <a class="btn btn-info text-nowrap" type="button"
-                    data-toggle="modal" data-target="#reserveModal"
+                    id="reserveButton"
                     >Reserve a Campsite</a>
                 </div>
             </div>
@@ -44,7 +44,7 @@
 <div id="reserveModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <div class="modal-header bg-info text-white">
+            <div class="modal-header">
                 <h3 class=" modal-title">Reserve a Campsite</h3>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
@@ -125,7 +125,8 @@
                         Contact</a></li>
             </ul>
             <span class="navbar-text ml-auto">
-                <a role="button" data-toggle="modal" data-target="#loginModal">
+                <a role="button" 
+                id="loginButton">
                     <i class="fa fa-sign-in"></i> Login
                 </a>
             </span>
@@ -304,26 +305,4 @@
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- endbuild -->
-
-<script>
-    $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-})
-
-
-
-function order() {
-  const message = document.querySelector("#message");
-  const checkedInput = document.querySelector("input:checked");
-  const numCampers = document.getElementById("numCampers");
-  const date = document.getElementById("date");
-  if (checkedInput) {
-    message.textContent = `You have placed an order for a campsite.  A ${checkedInput.value} with ${numCampers.value} campers for the date ${date.value}.`;
-  } else {
-    message.textContent = "Unknown order.";
-  }
-}
-</script>
-</body>
-
-</html>
+<script src="js/sripts.js"></script>
